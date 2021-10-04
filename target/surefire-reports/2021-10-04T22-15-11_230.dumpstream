@@ -1,0 +1,4 @@
+# Created at 2021-10-04T22:15:30.422
+Boot Manifest-JAR contains absolute paths in classpath 'D:\D Drive Data_Backup\math-service-springboot\SeleniumDocker\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+
