@@ -23,7 +23,7 @@ public class BaseTest {
         String host = "localhost";
         DesiredCapabilities dc = new DesiredCapabilities();
 
-        if(System.getProperty("browser")!=null && System.getProperty("browser").equalsIgnoreCase("firefox")) {
+        if(System.getProperty("BROWSER")!=null && System.getProperty("BROWSER").equalsIgnoreCase("firefox")) {
             dc.setBrowserName("Firefox");
             FirefoxOptions options = new FirefoxOptions();
             options.merge(dc);
