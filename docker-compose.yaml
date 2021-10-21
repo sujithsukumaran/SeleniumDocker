@@ -27,4 +27,4 @@ services:
      - HUB_HOST=hub
      - MODULE=testng.xml
    volumes:
-     - ./test-results:/usr/folder/practice
+     - ./test-results:/usr/folder/practice/testoutput
