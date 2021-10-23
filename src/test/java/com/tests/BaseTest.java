@@ -24,7 +24,7 @@ public class BaseTest {
         DesiredCapabilities dc = new DesiredCapabilities();
 
         if(System.getProperty("BROWSER")!=null && System.getProperty("BROWSER").equalsIgnoreCase("firefox")) {
-            dc.setBrowserName("Firefox");
+            dc.setBrowserName("firefox");
             FirefoxOptions options = new FirefoxOptions();
             options.merge(dc);
         }
