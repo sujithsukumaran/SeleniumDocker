@@ -23,23 +23,22 @@ public class BaseTest {
         String host = "localhost";
         DesiredCapabilities dc = new DesiredCapabilities();
 
-        if(System.getProperty("BROWSER")!=null && System.getProperty("BROWSER").equalsIgnoreCase("firefox")) {
+        if (System.getProperty("BROWSER") != null && System.getProperty("BROWSER").equalsIgnoreCase("firefox")) {
             dc.setBrowserName("firefox");
             FirefoxOptions options = new FirefoxOptions();
             options.merge(dc);
-        }
-        else {
+        } else {
             dc.setBrowserName("chrome");
             ChromeOptions options = new ChromeOptions();
             options.merge(dc);
         }
 
-        if(System.getProperty("HUB_HOST")!=null)
-          host = System.getProperty("HUB_HOST");
+        if (System.getProperty("HUB_HOST") != null)
+            host = System.getProperty("HUB_HOST");
 
-        String completeURL="http://"+host+":4444/wd/hub";
+        String completeURL = "http://" + host + ":4444/wd/hub";
         System.out.println(completeURL);
-        this.driver=new RemoteWebDriver(new URL(completeURL),dc);
+        this.driver = new RemoteWebDriver(new URL(completeURL), dc);
     }
 
     @AfterTest

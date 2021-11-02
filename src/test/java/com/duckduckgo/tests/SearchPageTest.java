@@ -14,7 +14,7 @@ public class SearchPageTest extends BaseTest {
 
     @Test
     @Parameters("searchWord")
-    public void searchTest(String searchWord){
+    public void searchTest(String searchWord) {
         SearchPage searchPage = new SearchPage(driver);
         searchPage.goToURL();
         searchPage.searchOp(searchWord);
